@@ -15,6 +15,8 @@ yarn add sewn
 ```
 
 ### `spawnThread(modulePath)`
+Spawn and communicate with a new thread
+
 ```js
 /* parent.mjs */
 
@@ -27,6 +29,7 @@ async function run() {
   thread.send({ id: 2, action: 'subtract', args: [2, 1] })
   thread.send({ id: 3, action: 'multiply', args: [3, 3] })
   thread.send({ id: 4, action: 'divide', args: [4, 2] })
+  thread.end()
 
   for await (const { id, result } of thread) {
     console.log(id, result)
@@ -48,3 +51,17 @@ export default async function() {
   }
 }
 ```
+
+`spawnThread` takes the path to a module whose default export will be called
+from the new thread. A message channel facilitates communication between the
+main thread and the created thread; one side of the channel is returned by
+`spawnThread`, and the other side is passed into the module.
+
+Each side is an async iterator from which messages can be consumed, via
+`for await` or the `.next()` method. Each side also has a `.send()` method for
+producing messages.
+
+The object returned by `spawnThread` also has a `.end()` method that when
+called, closes the message queue, ends the async iterator, and allows the
+thread to exit. Messages already in the message channel will be processed
+before the channel closes.
