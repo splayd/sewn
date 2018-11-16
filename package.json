@@ -1,7 +1,7 @@
 {
   "name": "sewn",
   "version": "0.0.0",
-  "description": "An awesome package",
+  "description": "Sew threads of work together",
   "keywords": [],
   "homepage": "https://github.com/splayd/sewn",
   "bugs": "https://github.com/splayd/sewn/issues",
@@ -10,26 +10,15 @@
   "repository": "splayd/sewn",
   "scripts": {
     "prepare": "flow-typed update --skip",
-    "test": "standard -v --fix && flow && ava -v",
-    "release": "semantic-release",
-    "prepack": "build-esm"
+    "test": "standard -v --fix && flow && audition index.test.mjs",
+    "release": "semantic-release"
   },
   "dependencies": {},
   "devDependencies": {
-    "ava": "^1.0.0-rc.2",
-    "build-esm": "^4.2.0",
+    "audition": "^1.3.0",
     "flow-bin": "^0.86.0",
     "flow-typed": "^2.5.1",
-    "overdub": "^2.2.1",
     "semantic-release": "^15.12.0",
     "standard-esnext": "^5.2.0"
-  },
-  "ava": {
-    "require": "overdub/register",
-    "babel": {
-      "testOptions": {
-        "extends": "overdub/babel"
-      }
-    }
   }
 }

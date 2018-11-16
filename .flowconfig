@@ -8,7 +8,5 @@
 [lints]
 
 [options]
-module.name_mapper='^sewn$' -> '<PROJECT_ROOT>'
-module.name_mapper='^sewn\/\(.*\)$' -> '<PROJECT_ROOT>/\1'
 
 [strict]
