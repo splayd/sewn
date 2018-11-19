@@ -10,11 +10,11 @@
   "repository": "splayd/sewn",
   "scripts": {
     "prepare": "flow-typed update --skip",
-    "test": "standard -v --fix && flow && audition lib/**/*.test.mjs",
+    "test": "standard -v --fix **/*.{js,mjs} && flow && audition lib/**/*.test.mjs",
     "release": "semantic-release"
   },
   "dependencies": {
-    "heliograph": "^4.1.0"
+    "heliograph": "^4.2.1"
   },
   "devDependencies": {
     "audition": "^1.3.0",

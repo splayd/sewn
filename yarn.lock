@@ -2528,6 +2528,13 @@ heliograph@^4.1.0:
   dependencies:
     lodash "^4.17.11"
 
+heliograph@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/heliograph/-/heliograph-4.2.1.tgz#a13b1bd8db27a910934b923c67ad5f86a9f95518"
+  integrity sha512-V5Cf11RnGuHfsUmN/TMnXz9iaO+pFlp97lsI57E8I+KHQ+pYTr3SM3u91HoazcZHcT+K+X5bY0t7Q7get9+00Q==
+  dependencies:
+    lodash "^4.17.11"
+
 hook-std@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/hook-std/-/hook-std-1.1.0.tgz#7f76b74b6f96d3cd4106afb50a66bdb0af2d2a2d"

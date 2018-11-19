@@ -65,3 +65,12 @@ The object returned by `spawnThread` also has a `.end()` method that when
 called, closes the message queue, ends the async iterator, and allows the
 thread to exit. Messages already in the message channel will be processed
 before the channel closes.
+
+### `spawnThreadPool(modulePath)`
+Spawn and communicate with a pool of threads.
+
+Messages produced by the parent are consumed round-robin by each thread in the
+pool.
+
+The interface is the same as
+[`spawnThread(modulePath)`](#spawnthreadmodulepath).
