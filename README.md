@@ -1,8 +1,8 @@
 # sewn
 ![npm](https://img.shields.io/npm/v/sewn.svg)
-[![Build Status](https://travis-ci.org/splayd/sewn.svg?branch=master)](https://travis-ci.org/splayd/sewn)
-[![dependencies Status](https://david-dm.org/splayd/sewn/status.svg)](https://david-dm.org/splayd/sewn)
-[![devDependencies Status](https://david-dm.org/splayd/sewn/dev-status.svg)](https://david-dm.org/splayd/sewn?type=dev)
+[![Build Status](https://travis-ci.org/vinsonchuong/sewn.svg?branch=master)](https://travis-ci.org/vinsonchuong/sewn)
+[![dependencies Status](https://david-dm.org/vinsonchuong/sewn/status.svg)](https://david-dm.org/vinsonchuong/sewn)
+[![devDependencies Status](https://david-dm.org/vinsonchuong/sewn/dev-status.svg)](https://david-dm.org/vinsonchuong/sewn?type=dev)
 
 Sew threads of work together
 
